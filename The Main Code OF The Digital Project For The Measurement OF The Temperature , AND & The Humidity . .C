@@ -21,9 +21,9 @@ Void setup () {
 
 
   dht.begin ();                                                                                                  //
-  pinMode (RED, OUTPUT);                                                                                        // Introducing the OUTPUT pin .
-  pinMode (Green, OUTPUT);                                                                                     // Introducing the OUTPUT pin .
-  Serial.begin (9600);                                                                                        // Introducing the Series .
+  pinMode (RED, OUTPUT);                                                                                        // Introducing The OUTPUT pin .
+  pinMode (Green, OUTPUT);                                                                                     // Introducing The OUTPUT pin .
+  Serial.begin (9600);                                                                                        // Introducing The Series .
   LCD.begin (16, 2);                                                                                         // Introducing LCD Resolution .
 
 
@@ -35,38 +35,38 @@ void loop () {
 
   float Humid = dht.ReadHumidity ();                                                                  // Read Data . :
   float Temp = dht.ReadTemperature ();                                                               // Read Data . :
-  delay (2000);                                                                                     // Running the Delay Function (2 Seconds) . :
-  Serial.print (" Temp : ");                                                                       // Show the Desired Message .
-  Serial.println (Temp);                                                                          // Show the Desired Message .
-  Serial.print (" Humid : ");                                                                    // Show the Desired Message .
-  Serial.println (Humid);                                                                       // Show the Desired Message .
+  delay (2000);                                                                                     // Running The Delay Function (2 Seconds) . :
+  Serial.print (" Temp : ");                                                                       // Show The Desired Message .
+  Serial.println (Temp);                                                                          // Show The Desired Message .
+  Serial.print (" Humid : ");                                                                    // Show The Desired Message .
+  Serial.println (Humid);                                                                       // Show The Desired Message .
   LCD.setCursor (0, 0);                                                                        // To run Regularly and Display the OUTPUT Below .
-  LCD.print (" Temp : ");                                                                     // Show the Desired Message .
-  LCD.print (Temp);                                                                          // Show the Desired Message .
+  LCD.print (" Temp : ");                                                                     // Show The Desired Message .
+  LCD.print (Temp);                                                                          // Show The Desired Message .
   LCD.setCursor (0, 1);                                                                     // To run Regularly and Display the OUTPUT Below .
-  LCD.print (" Humid : ");                                                                 // Show the Desired Message .
-  LCD.print (Humid);                                                                      // Show the Desired Message .
+  LCD.print (" Humid : ");                                                                 // Show The Desired Message .
+  LCD.print (Humid);                                                                      // Show The Desired Message .
 
 
-  if (Temp > 28) {                                                                    // If the Temperature Value exceeds " Twenty-Eight (28) degrees Celsius (28 ° C) " do the Following :
+  if (Temp > 28) {                                                                    // If The Temperature Value exceeds " Twenty-Eight (28) degrees Celsius (28 ° C) " do the Following :
 
 
-    LCD.setCursor (0, 1);                                                           // To run Regularly and Display the OUTPUT Below .
-    LCD.print (" + + + + Warm + + + + ");                                          // Show the Desired Message .
-    digitalWrite (RED, HIGH);                                                     // Turn on the RED LED .
-    digitalWrite (Green, LOW);                                                   // Turn off the Green LED .
+    LCD.setCursor (0, 1);                                                           // To run Regularly and Display The OUTPUT Below .
+    LCD.print (" + + + + Warm + + + + ");                                          // Show The Desired Message .
+    digitalWrite (RED, HIGH);                                                     // Turn on The RED LED .
+    digitalWrite (Green, LOW);                                                   // Turn off The Green LED .
 
 
     }
 
 
-if (Temp < 27) {                                                           // If the Temperature value drops below " Twenty-Seven (27) degrees Celsius (27 ° C) " do the following :
+if (Temp < 27) {                                                           // If The Temperature value drops below " Twenty-Seven (27) degrees Celsius (27 ° C) " do the following :
 
 
-  LCD.setCursor (0, 1);                                                  // To run Regularly and Display the OUTPUT Below .
-    LCD.print (" * * * * Cool * * * * ");                               // Show the Desired Message .
-    digitalWrite (Green, HIGH);                                        // Turn on the Green LED .
-    digitalWrite (RED, LOW);                                          // Turn off the RED LED .
+  LCD.setCursor (0, 1);                                                  // To run Regularly and Display The OUTPUT Below .
+    LCD.print (" * * * * Cool * * * * ");                               // Show The Desired Message .
+    digitalWrite (Green, HIGH);                                        // Turn on The Green LED .
+    digitalWrite (RED, LOW);                                          // Turn off The RED LED .
 
 
   }
