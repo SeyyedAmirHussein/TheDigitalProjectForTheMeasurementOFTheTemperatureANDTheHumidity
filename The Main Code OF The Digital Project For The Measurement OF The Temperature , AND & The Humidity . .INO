@@ -1,8 +1,8 @@
 // The Digital Project For The Measurement OF The Temperature , AND & The Humidity .
 
-// The Main Code OF The Digital Project For The Measurement OF The Temperature , AND & The Humidity . .C
-
 // In this program, We want to Measure the Temperature and Humidity and then Display them on the LCD Screen. If the Temperature Warms up and exceeds " Twenty-Eight (28) degrees Celsius (28 ° C) " , print the phrase " Warm " and then turn on the RED LED Light. But if the Temperature Cools and Drops Below " Twenty-Seven (27) degrees Celsius (27 ° C) " , print the phrase " Cool " and then turn on the Green LED Light .
+
+// The Main Code OF The Digital Project For The Measurement OF The Temperature , AND & The Humidity . .INO .
 
 
 
